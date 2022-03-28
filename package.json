@@ -11,6 +11,7 @@
     "check": "prettier --write && eslint --fix"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.0",
     "expo": "~44.0.0",
     "expo-local-authentication": "~12.1.0",
     "expo-splash-screen": "~0.14.1",
@@ -19,8 +20,10 @@
     "react-dom": "17.0.1",
     "react-hot-toast": "^2.2.0",
     "react-native": "0.64.3",
+    "react-native-web": "0.17.1",
     "react-redux": "^7.2.6",
-    "react-native-web": "0.17.1"
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -36,8 +39,8 @@
     "eslint-import-resolver-babel-module": "^5.3.1",
     "eslint-plugin-react": "^7.29.4",
     "prettier": "^2.6.1",
-    "typescript": "~4.3.5",
-    "quicktype": "^15.0.260"
+    "quicktype": "^15.0.260",
+    "typescript": "~4.3.5"
   },
   "private": true
 }

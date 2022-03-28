@@ -1,5 +1,5 @@
 import {StyleSheet, Text, TouchableHighlight, ViewStyle} from 'react-native';
-import {text} from '../style/commonStyles';
+import {text} from '../../style/commonStyles';
 
 type ButtonProps = {
   text: string;

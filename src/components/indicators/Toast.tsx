@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import {Toast} from 'react-hot-toast';
-import {theme} from '../style/commonStyles';
+import {theme} from '../../style/commonStyles';
 
 export default ({toast}: {toast: Toast}): React.ReactElement => {
   return (

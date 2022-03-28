@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import useLocalAuth from '../hooks/useLocalAuth';
-import Button from '../components/Button';
+import Button from '../components/inputs/Button';
 import {theme, text} from '../style/commonStyles';
 
 export default (): React.ReactElement => {
