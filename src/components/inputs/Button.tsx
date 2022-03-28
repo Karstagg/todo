@@ -1,16 +1,28 @@
-import {StyleSheet, Text, TouchableHighlight, ViewStyle} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TextStyle,
+  TouchableHighlight,
+  ViewStyle,
+} from 'react-native';
 import {text} from '../../style/commonStyles';
 
 type ButtonProps = {
   text: string;
   onPress: () => void;
   style?: ViewStyle;
+  textStyle?: TextStyle;
 };
 
-export default ({text, onPress, style}: ButtonProps): React.ReactElement => {
+export default ({
+  text,
+  onPress,
+  style,
+  textStyle,
+}: ButtonProps): React.ReactElement => {
   return (
     <TouchableHighlight style={[styles.container, style]} onPress={onPress}>
-      <Text style={styles.text}>{text}</Text>
+      <Text style={[styles.text, textStyle]}>{text}</Text>
     </TouchableHighlight>
   );
 };
