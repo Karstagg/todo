@@ -5,7 +5,7 @@ import {
   TouchableHighlight,
   ViewStyle,
 } from 'react-native';
-import {text} from '../../style/commonStyles';
+import {text} from '@styles/commonStyles';
 
 type ButtonProps = {
   text: string;

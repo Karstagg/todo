@@ -1,7 +1,7 @@
 import * as LocalAuthentication from 'expo-local-authentication';
 import {toast} from 'react-hot-toast/src/core/toast';
-import {useTypedDispatch} from './reduxTypedHooks';
-import {signOut, singIn} from '../state/slices/auth';
+import {useTypedDispatch} from '@hooks/reduxTypedHooks';
+import {signOut, singIn} from '@state/slices/auth';
 
 export default () => {
   const dispatch = useTypedDispatch();
@@ -16,9 +16,9 @@ export default () => {
     return;
   };
 
-  const deauthenticate = () => {
+  const revokeAuth = () => {
     dispatch(signOut());
   };
 
-  return {authenticate, deauthenticate};
+  return {authenticate, revokeAuth};
 };

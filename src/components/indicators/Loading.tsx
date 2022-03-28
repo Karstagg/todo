@@ -1,5 +1,5 @@
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
-import {theme} from '../../style/commonStyles';
+import {theme} from '@styles/commonStyles';
 
 export default (): React.ReactElement => {
   return (

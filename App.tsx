@@ -1,15 +1,15 @@
-import AuthView from './src/views/AuthView';
+import AuthView from '@views/AuthView';
 import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 import {useEffect} from 'react';
-import common from './src/style/commonStyles';
-import Toasts from './src/components/indicators/Toasts';
-import {useTypedSelector} from './src/hooks/reduxTypedHooks';
-import {selectAuth} from './src/state/slices/auth';
+import common from '@styles/commonStyles';
+import Toasts from '@indicators/Toasts';
+import {useTypedSelector} from '@hooks/reduxTypedHooks';
+import {selectAuth} from '@state/slices/auth';
 import {Provider} from 'react-redux';
-import TodoListView from './src/views/TodoListView';
+import TodoListView from '@views/TodoListView';
 import {PersistGate} from 'redux-persist/integration/react';
-import {persistor, store} from './src/state/store';
-import Loading from './src/components/indicators/Loading';
+import {persistor, store} from '@state/store';
+import Loading from '@indicators/Loading';
 
 const AppWithState = (): React.ReactElement => {
   const {authenticated} = useTypedSelector((state) => selectAuth(state));

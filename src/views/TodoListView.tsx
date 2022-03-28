@@ -1,17 +1,17 @@
 import {StyleSheet, View} from 'react-native';
-import Button from '../components/inputs/Button';
-import {text} from '../style/commonStyles';
-import useLocalAuth from '../hooks/useLocalAuth';
+import Button from '@inputs/Button';
+import {text} from '@styles/commonStyles';
+import useLocalAuth from '@hooks/useLocalAuth';
 
 export default (): React.ReactElement => {
-  const {deauthenticate} = useLocalAuth();
+  const {revokeAuth} = useLocalAuth();
   return (
     <View style={styles.container}>
       <Button
         text="Sign Out"
         style={styles.signOutButton}
         textStyle={styles.signOutButtonText}
-        onPress={deauthenticate}
+        onPress={revokeAuth}
       />
     </View>
   );
