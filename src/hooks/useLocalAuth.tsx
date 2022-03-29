@@ -1,12 +1,12 @@
-import * as LocalAuthentication from 'expo-local-authentication';
+import {authenticateAsync} from 'expo-local-authentication';
 import {toast} from 'react-hot-toast/src/core/toast';
-import {useTypedDispatch} from '@hooks/reduxTypedHooks';
 import {signOut, singIn} from '@state/slices/auth';
+import {useTypedDispatch} from '@hooks/typedReduxHooks';
 
 export default () => {
   const dispatch = useTypedDispatch();
   const authenticate = async (): Promise<void> => {
-    const auth = await LocalAuthentication.authenticateAsync();
+    const auth = await authenticateAsync();
     if (!auth.success) {
       return;
     }

@@ -14,6 +14,7 @@ export default (): React.ReactElement => {
           <Text style={styles.text}>Sign in to get started.</Text>
         </View>
         <Button
+          testID="authButton"
           text={'Sign In'}
           onPress={authenticate}
           style={{backgroundColor: theme.constructive}}

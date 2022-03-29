@@ -3,13 +3,13 @@ import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 import {useEffect} from 'react';
 import common from '@styles/commonStyles';
 import Toasts from '@indicators/Toasts';
-import {useTypedSelector} from '@hooks/reduxTypedHooks';
 import {selectAuth} from '@state/slices/auth';
 import {Provider} from 'react-redux';
 import TodoListView from '@views/TodoListView';
 import {PersistGate} from 'redux-persist/integration/react';
 import {persistor, store} from '@state/store';
 import Loading from '@indicators/Loading';
+import {useTypedSelector} from '@hooks/typedReduxHooks';
 
 const AppWithState = (): React.ReactElement => {
   const {authenticated} = useTypedSelector((state) => selectAuth(state));

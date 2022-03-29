@@ -14,6 +14,7 @@ module.exports = function (api) {
             '@hooks': './src/hooks',
             '@state': './src/state',
             '@views': './src/views',
+            '@testUtils': './testUtils.tsx',
           },
         },
       ],
