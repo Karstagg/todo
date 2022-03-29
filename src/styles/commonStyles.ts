@@ -1,3 +1,4 @@
+// common styles
 export const theme = {
   bgColor: '#414141',
   textColor: '#fff',

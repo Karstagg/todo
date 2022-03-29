@@ -3,6 +3,7 @@ import useLocalAuth from '@hooks/useLocalAuth';
 import Button from '@inputs/Button';
 import {theme, text} from '@styles/commonStyles';
 
+// unauthorized view
 export default (): React.ReactElement => {
   const {authenticate} = useLocalAuth();
 
@@ -14,7 +15,6 @@ export default (): React.ReactElement => {
           <Text style={styles.text}>Sign in to get started.</Text>
         </View>
         <Button
-          testID="authButton"
           text={'Sign In'}
           onPress={authenticate}
           style={{backgroundColor: theme.constructive}}

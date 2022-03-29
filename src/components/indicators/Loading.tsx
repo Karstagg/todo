@@ -1,6 +1,7 @@
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
 import {theme} from '@styles/commonStyles';
 
+// a simple loading indicator
 export default (): React.ReactElement => {
   return (
     <View style={styles.container}>

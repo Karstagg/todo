@@ -12,21 +12,17 @@ type ButtonProps = {
   onPress: () => void;
   style?: ViewStyle;
   textStyle?: TextStyle;
-  testID?: string;
 };
 
+// a custom button
 export default ({
   text,
   onPress,
   style,
   textStyle,
-  testID,
 }: ButtonProps): React.ReactElement => {
   return (
-    <TouchableHighlight
-      testID={testID}
-      style={[styles.container, style]}
-      onPress={onPress}>
+    <TouchableHighlight style={[styles.container, style]} onPress={onPress}>
       <Text style={[styles.text, textStyle]}>{text}</Text>
     </TouchableHighlight>
   );

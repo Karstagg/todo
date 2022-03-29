@@ -3,6 +3,7 @@ import Button from '@inputs/Button';
 import {text} from '@styles/commonStyles';
 import useLocalAuth from '@hooks/useLocalAuth';
 
+// authorized view containing to-do functionality
 export default (): React.ReactElement => {
   const {revokeAuth} = useLocalAuth();
   return (

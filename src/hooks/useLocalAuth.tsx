@@ -3,6 +3,7 @@ import {toast} from 'react-hot-toast/src/core/toast';
 import {signOut, singIn} from '@state/slices/auth';
 import {useTypedDispatch} from '@hooks/typedReduxHooks';
 
+// handles sign in / sign out with expo local authentication
 export default () => {
   const dispatch = useTypedDispatch();
   const authenticate = async (): Promise<void> => {
