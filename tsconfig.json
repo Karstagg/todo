@@ -1,6 +1,15 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@indicators/*": ["./src/components/indicators/*"],
+      "@inputs/*": ["./src/components/inputs/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@state/*": ["./src/state/*"],
+      "@views/*": ["./src/views/*"],
+      "@testUtils": ["./testUtils.tsx"]
+    }
   }
 }
