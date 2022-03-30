@@ -8,6 +8,7 @@ module.exports = function (api) {
         {
           root: ['.'],
           alias: {
+            '@displays': './src/components/displays',
             '@indicators': './src/components/indicators',
             '@inputs': './src/components/inputs',
             '@styles': './src/styles',

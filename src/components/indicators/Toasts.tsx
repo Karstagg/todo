@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
     width: '100%',
     position: 'absolute',
     zIndex: 10,
-    bottom: '5%',
+    bottom: '10%',
   },
 });

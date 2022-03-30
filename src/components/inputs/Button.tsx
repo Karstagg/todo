@@ -10,8 +10,10 @@ import {text} from '@styles/commonStyles';
 type ButtonProps = {
   text: string;
   onPress: () => void;
-  style?: ViewStyle;
+  style?: ViewStyle | ViewStyle[];
   textStyle?: TextStyle;
+  disabled?: boolean;
+  testID?: string;
 };
 
 // a custom button
@@ -20,9 +22,15 @@ export default ({
   onPress,
   style,
   textStyle,
+  disabled,
+  testID,
 }: ButtonProps): React.ReactElement => {
   return (
-    <TouchableHighlight style={[styles.container, style]} onPress={onPress}>
+    <TouchableHighlight
+      testID={testID}
+      disabled={disabled}
+      style={[styles.container, style]}
+      onPress={onPress}>
       <Text style={[styles.text, textStyle]}>{text}</Text>
     </TouchableHighlight>
   );

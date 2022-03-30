@@ -19,6 +19,7 @@ module.exports = {
     '^@hooks(.*)$': '<rootDir>/src/hooks$1',
     '^@state(.*)$': '<rootDir>/src/state$1',
     '^@views(.*)$': '<rootDir>/src/views$1',
+    '^@displays(.*)$': '<rootDir>/src/components/displays$1',
     '^@testUtils(.*)$': '<rootDir>/testUtils.tsx',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
