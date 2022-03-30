@@ -1,5 +1,5 @@
 import AuthView from '@views/AuthView';
-import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
+import {SafeAreaView, StyleSheet, StatusBar, Platform} from 'react-native';
 import {useCallback, useEffect, useState} from 'react';
 import common, {theme} from '@styles/commonStyles';
 import Toasts from '@indicators/Toasts';
@@ -31,7 +31,7 @@ export default (): React.ReactElement | null => {
   const [appIsReady, setAppIsReady] = useState<boolean>(false);
   useEffect(() => {
     StatusBar.setBarStyle('light-content');
-    StatusBar.setBackgroundColor(theme.bgColor);
+    Platform.OS === 'android' && StatusBar.setBackgroundColor(theme.bgColor);
   }, []);
 
   useEffect(() => {
